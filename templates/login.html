@@ -1,0 +1,60 @@
+<html>
+<body>
+<head>
+	<title>
+		BIN-PY
+	</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<style>
+	section.sec3{
+		margin-top:-100px;
+		background-color: #3da435;
+	}
+	.animation{
+		margin-top:5px;
+	}
+</style>
+<body style="background-color:#191919;">
+	<div class="navbar">
+		<div class="container">
+			<div class="logo">
+				<a href="#"><img src="/static/logo.jpg" class="logo"></a>
+
+			</div>
+
+			<div class="navbar-links">
+				<ul class="menu">
+					<li><a href="/"> Bin-Py </a></li>
+					<li style=" margin-left:500px;"><a href="/"> Home </a></li>
+					<li><a href="/"> About Us </a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<br><br><br>
+	<span id="login">
+		<section class="sec3" style="margin-bottom=600px">
+			<center>
+				<div class="login">
+					<form action =" {{ url_for ('LOGIN1') }} "  method="POST">
+						<h2 style="margin-top:-15px; color:black"> SIGN-IN</h2> <br>
+
+						<label for="ID" style="font-size:20px; text-align: center;"> USER-ID </label> <br> <br>
+						<input type="text" style="color:black"name="userid" placeholder="Enter the User ID" required > <br> <br> <br>
+
+						<label for="Password"> PASSWORD </label> <br> <br>
+						<input type="password"style="color:black" name="password" placeholder="Enter Password" required >
+						<br>
+						<br> <br>
+						<input type="submit"style="color:black" value="submit">SUBMIT </input>
+						<br>
+                    	<a href="/SIGN-UP" style="color:black"> Don't Have An Account Yet? </a>
+					</form>
+			</div>
+		</center>
+	</section>
+</span>
+</div>
+</body>
+</html>
