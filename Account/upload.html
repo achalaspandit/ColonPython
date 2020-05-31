@@ -1,0 +1,44 @@
+<html>
+<head>
+	<link rel="stylesheet" href="upload.css">
+	<script type='text/javascript'>
+	function preview_image(event) 
+	{
+		var reader = new FileReader();
+ 		reader.onload = function()
+ 		{
+  			var output = document.getElementById('output_image');
+  			output.src = reader.result;
+ 		}
+ 	reader.readAsDataURL(event.target.files[0]);
+	}
+	</script>
+</head>
+<body>
+	<div class="navbar">
+		<div class="container">
+			<div class="logo">
+				<a href="#"><img src="logo.jpg" class="logo"></a>
+
+			</div>
+
+			<div class="navbar-links">
+				<ul class="menu">
+					<li><a href="#"> Bin-Py </a></li>
+					<li style=" margin-left:900px;"><a href="binpy.html"> Log Out </a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<marquee class="marquee" direction="left" scrollamount="3" onmouseover="this.stop();" onmouseout="this.start()">Use it up, wear it out, make it do, or do without.   There is no such thing as ‘away’. When we throw anything away it must go somewhere          Reduce!      Reuse!     Recyle!      Refuse!     </marquee>
+	<center>
+	<div class="image-preview" id="imagePreview">
+		<h2> UPLOAD SAMPLE IMAGE</h2>
+ 		<input type="file" accept="image/*" onchange="preview_image(event)">
+ 		<img id="output_image"/>
+ 		<br>
+ 		<span class="image-preview_default-text">Image Preview</span>
+	</div>
+	</center>
+</body>
+</html>
