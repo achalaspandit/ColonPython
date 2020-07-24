@@ -1,0 +1,47 @@
+<html>
+<head>
+	<title>
+		BIN-PY
+	</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<style>
+	section.sec3{
+		margin-top:-100px;
+		background-color:#3da435;
+	}
+	.animation{
+		margin-top:5px;
+	}
+</style>
+<body style="background-color:#191919;">
+	<div class="navbar">
+		<div class="container">
+			<div class="logo">
+				<a href="#"><img src="/static/logo.jpg" class="logo"></a>
+
+			</div>
+
+			<div class="navbar-links">
+				<ul class="menu">
+					<li><a href="/"> Bin-Py </a></li>
+					<li style=" margin-left:900px;"><a href="/"> Home </a></li>
+
+				</ul>
+			</div>
+		</div>
+	</div><br>
+<body>
+<section class="sec3">
+			<center>
+				<div class="login">
+					<h2 style="color:black"> <center>{{ msg }}</center> </h2>
+					<button type="submit"><a href="/SIGN-IN">LOGIN</a></button>
+
+				</div>
+			</center>
+		</section>
+	</span>
+</body>
+
+</html>
